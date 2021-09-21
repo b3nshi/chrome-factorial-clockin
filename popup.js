@@ -1,9 +1,8 @@
 const BASE_HOST_STORAGE = "site_";
 const KNOWN_URLS = ["app.factorialhr.com"];
-const LOGGER = true;
 
-function autofill() {
-  let LOGGER = true;
+const autofill = function () {
+  const LOGGER = false;
 
   const logger = (...messages) => {
     LOGGER && console.log(...messages);
@@ -105,7 +104,7 @@ function autofill() {
     autofillExecution(JSON.parse(value.arrayOfTimes || "[]"));
     chrome.storage.sync.remove("arrayOfTimes");
   });
-}
+};
 
 const isKnownURL = (url) => {
   return KNOWN_URLS.find((knownUrl) => url.includes(knownUrl));
