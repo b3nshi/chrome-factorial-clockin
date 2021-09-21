@@ -1,0 +1,23 @@
+{
+  "name": "Factorial AutoFill",
+  "version": "1.0",
+  "description": "Extension to autocomplete the clock-in option in Factorial",
+  "manifest_version": 3,
+  "permissions": ["declarativeContent", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://app.factorialhr.com/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/factorial-autofill16.png",
+      "32": "images/factorial-autofill32.png",
+      "48": "images/factorial-autofill48.png",
+      "128": "images/factorial-autofill128.png"
+    }
+  },
+  "icons": {
+    "16": "images/factorial-autofill16.png",
+    "32": "images/factorial-autofill32.png",
+    "48": "images/factorial-autofill48.png",
+    "128": "images/factorial-autofill128.png"
+  }
+}
