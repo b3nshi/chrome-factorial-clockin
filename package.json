@@ -1,18 +1,24 @@
 {
-  "name": "Factorial-AutoFill",
+  "name": "factorial-autofill",
   "version": "1.0.0",
   "description": "It is a simple Chrome extension developed to autofill the clock-in option in Factorial.",
   "main": "popup.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel popup.html",
-    "build": "rm -rf dist .cache && parcel build popup.html && cp manifest.json dist/manifest.json && cp -rf images dist/images"
+    "build": "rm -rf dist .cache && parcel build src/popup.html && cp src/manifest.json dist/manifest.json && cp -rf src/images dist/images",
+    "lint": "eslint"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "2.4.1"
   },
   "browserslist": [
     "last 3 chrome versions"
